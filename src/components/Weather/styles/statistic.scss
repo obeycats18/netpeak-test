@@ -1,0 +1,50 @@
+.weather-statistic {
+  margin-top: 5%;
+  &__headline {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+  &__grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    padding: 24px;
+    margin-bottom: 16px;
+    background-color: #fff;
+    border-radius: 10px;
+    &-name {
+      font-weight: 300;
+    }
+    &-icon {
+      width: 20%;
+    }
+  }
+}
+
+.weather-statistic__sun {
+  display: flex;
+  flex-direction: column;
+  &-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &__icon {
+      width: 12%;
+      margin-right: 5%;
+    }
+    &__time {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}

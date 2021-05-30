@@ -1,0 +1,22 @@
+.weather-current {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 6%;
+  padding: 50px;
+  border-bottom: 1px solid #dcdcdc;
+  &__icon {
+    width: 10%;
+    margin-right: 4%;
+  }
+  &__temp {
+    &-value {
+      font-size: 66px;
+    }
+    &-feels {
+      font-size: 22px;
+      font-weight: 300;
+    }
+  }
+}

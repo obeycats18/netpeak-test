@@ -1,0 +1,40 @@
+.weather-week {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    padding: 12px;
+    margin-right: 16px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: box-shadow 0.25s ease;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      box-shadow: 0px 0px 16px -4px rgba(34, 60, 80, 0.14);
+    }
+    &-day {
+      font-weight: 300;
+    }
+    &-icon {
+      width: 30%;
+    }
+    &-temp {
+      display: flex;
+      font-weight: 400;
+      margin-top: 16px;
+      .max {
+        margin-right: 10px;
+      }
+      .min {
+        color: rgba(102, 102, 102, 0.667);
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.weather-main__city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-headline {
+    font-size: 48px;
+    margin-bottom: 48px;
+  }
+  &-input {
+    width: 50%;
+    margin-bottom: 32px;
+  }
+}
