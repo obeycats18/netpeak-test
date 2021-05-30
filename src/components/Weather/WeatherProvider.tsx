@@ -4,7 +4,6 @@ import { useHistory, useLocation } from "react-router";
 
 import { RootStore } from "store/store";
 
-import { Loading } from "@components/Loading/Loading";
 import { State } from "types/location";
 import {
   isWeatherNotFound,
