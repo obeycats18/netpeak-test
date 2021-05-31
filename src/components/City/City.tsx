@@ -17,7 +17,7 @@ export const City: React.FC = () => {
   const handleButtonClick = () => {
     if (!name || !name.length) return;
 
-    history.push("/weather", { city: name });
+    history.push(`/weather/${name}`);
   };
 
   return (

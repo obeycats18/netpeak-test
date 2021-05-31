@@ -9,7 +9,7 @@ const App: React.FC = () => {
   return (
     <Switch>
       <Route exact path='/' component={Main} />
-      <Route exact path='/weather' component={Weather} />
+      <Route exact path='/weather/:city' component={Weather} />
       <Route exact path='/not-found' component={WeatherNotFound} />
     </Switch>
   );

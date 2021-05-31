@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { useHistory, useLocation } from "react-router";
+import { useHistory, useLocation, useParams } from "react-router";
 
 import { RootStore } from "store/store";
 
@@ -23,7 +23,6 @@ type WeatherStateToProps = {
   weather: Weather | WeatherNotFound | null;
   currentWeather: Weather | WeatherNotFound | null;
   coords?: GeolocationCoordinates | null;
-  loading: boolean;
 };
 
 type WeatherDispatchToProps = {
@@ -41,13 +40,11 @@ export const WeatherProvider = (
     weather,
     currentWeather,
     coords,
-    loading,
     getWeatherByCity,
     getWeatherByCoords,
   }) => {
     const history = useHistory();
-    const location = useLocation<State>();
-    const city = location.state?.city;
+    const { city } = useParams<State>();
 
     useEffect(() => {
       if (by === "city") {
@@ -78,7 +75,6 @@ export const WeatherProvider = (
     weather: weather.weather,
     currentWeather: weather.currentWeather,
     coords: geolocation.position?.coords,
-    loading: weather.loading,
   });
 
   return connect(mapStateToProps, { getWeatherByCity, getWeatherByCoords })(

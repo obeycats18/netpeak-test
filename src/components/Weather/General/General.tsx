@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory, useLocation } from "react-router";
+import { useHistory, useLocation, useParams } from "react-router";
 
 import { getDayOfWeek, getTime } from "@utils/date";
 import { WeatherProvider } from "../WeatherProvider";
@@ -17,7 +17,7 @@ type GeneralProps = {
 };
 
 const General: React.FC<GeneralProps> = ({ weather }) => {
-  const { state } = useLocation<State>();
+  const { city } = useParams<State>();
 
   if (!weather) {
     return null;
@@ -34,7 +34,7 @@ const General: React.FC<GeneralProps> = ({ weather }) => {
         {getDayOfWeek(weather.dt)},{" "}
         <span className='time'>{getTime(weather.dt)}</span>
       </p>
-      <div className='weather__general-city'>{state?.city}</div>
+      <div className='weather__general-city'>{city}</div>
     </aside>
   );
 };
