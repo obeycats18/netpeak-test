@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/netpeak-test/static/css/main.0b0d3545.chunk.css",
-    "main.js": "/netpeak-test/static/js/main.1536b70a.chunk.js",
-    "main.js.map": "/netpeak-test/static/js/main.1536b70a.chunk.js.map",
+    "main.js": "/netpeak-test/static/js/main.6221b3ba.chunk.js",
+    "main.js.map": "/netpeak-test/static/js/main.6221b3ba.chunk.js.map",
     "runtime-main.js": "/netpeak-test/static/js/runtime-main.e22fdbc8.js",
     "runtime-main.js.map": "/netpeak-test/static/js/runtime-main.e22fdbc8.js.map",
     "static/css/2.2401f1a1.chunk.css": "/netpeak-test/static/css/2.2401f1a1.chunk.css",
@@ -43,6 +43,6 @@
     "static/css/2.2401f1a1.chunk.css",
     "static/js/2.7da3068d.chunk.js",
     "static/css/main.0b0d3545.chunk.css",
-    "static/js/main.1536b70a.chunk.js"
+    "static/js/main.6221b3ba.chunk.js"
   ]
 }
